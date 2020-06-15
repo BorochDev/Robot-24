@@ -28,9 +28,11 @@ namespace robot
 
         public void Reset()
         {
-            names.Remove(Name);
+            string name = Name;
 
             nameGenerate();
+
+            names.Remove(name);
 
             names.Add(Name);
         }
